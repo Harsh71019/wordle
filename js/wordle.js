@@ -16,8 +16,7 @@ startInteraction()
 
   function openMobileKeyboard () {
     mainWordle.focus();
-    console.log("fwjfj")
-    alert("keyboard triggered")
+    showAlert("You Win", 5000)
   }
   mainWordle.addEventListener('touchstart', openMobileKeyboard);
 
@@ -31,7 +30,6 @@ function stopInteraction() {
   document.removeEventListener("click", handleMouseClick)
   document.removeEventListener("keydown", handleKeyPress)
 }
-
 
 
 function handleMouseClick(e) {
