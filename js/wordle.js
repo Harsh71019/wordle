@@ -13,11 +13,13 @@ const mainWordle = document.getElementById("keys")
 
 startInteraction()
 
+
   function openMobileKeyboard () {
     mainWordle.focus();
     console.log("fwjfj")
+    alert("keyboard triggered")
   }
-  mainWordle.addEventListener('click', openMobileKeyboard);
+  mainWordle.addEventListener('touchstart', openMobileKeyboard);
 
 
 function startInteraction() {
