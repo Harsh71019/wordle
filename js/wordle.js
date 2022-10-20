@@ -14,13 +14,6 @@ const mainWordle = document.getElementById("keys")
 startInteraction()
 
 
-  function openMobileKeyboard () {
-    mainWordle.focus();
-    showAlert("You Win", 5000)
-  }
-  mainWordle.addEventListener('touchstart', openMobileKeyboard);
-
-
 function startInteraction() {
   document.addEventListener("click", handleMouseClick)
   document.addEventListener("keydown", handleKeyPress)
